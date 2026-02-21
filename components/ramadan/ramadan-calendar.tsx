@@ -8,7 +8,7 @@ export function RamadanCalendar() {
     const rightColumn = data.people.filter((p) => p.id >= 16 && p.id <= 30);
 
     return (
-        <div className="ramadan-page mx-auto flex flex-col font-sans">
+        <div className="ramadan-page mx-auto flex flex-col font-ador">
             {/* Header */}
             <CalendarHeader title={data.title} />
 
