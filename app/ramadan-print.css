@@ -1,0 +1,58 @@
+.ramadan-page {
+    width: 210mm;
+    min-height: 297mm;
+    padding: 12mm 15mm;
+    box-sizing: border-box;
+    background: #fff;
+}
+
+@media print {
+    @page {
+        size: A4;
+        margin: 12mm 15mm;
+    }
+
+    body {
+        -webkit-print-color-adjust: exact;
+        print-color-adjust: exact;
+        margin: 0;
+        padding: 0;
+    }
+
+    .ramadan-page {
+        width: 100%;
+        min-height: auto;
+        padding: 0;
+        margin: 0;
+    }
+
+    /* Header: add space below so content doesn't sit flush */
+    /* .ramadan-page > header {
+        margin-bottom: 6mm;
+    } */
+
+    /* Footer: add space above so it's clearly separated from content */
+    /* .ramadan-page > footer {
+        margin-top: 6mm;
+        padding-top: 5mm;
+    }
+
+    .print-hide {
+        display: none !important;
+    } */
+
+    /* Prevent page breaks inside tables */
+    /* table {
+        page-break-inside: avoid;
+    }
+
+    tbody tr {
+        page-break-inside: avoid;
+    } */
+}
+
+@media screen {
+    .ramadan-page {
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    }
+}
