@@ -9,6 +9,9 @@ type RamadanInfo = {
     title: string;
     people: Person[];
     footer: string;
+    /** URLs encoded in the two footer QR codes – scanning or clicking opens these */
+    qrcode1Url: string;
+    qrcode2Url: string;
     tableHeader: {
         id: string;
         name: string;
@@ -58,6 +61,8 @@ const data: RamadanInfo = {
         { id: 30, name: "মো: আকরাম আলী (উত্তর বাড়ী)", ramadan: "৩০তম", date: "২০শে মার্চ" },
     ],
     footer: "for any kind of information go to https://syedamirali.com",
+    qrcode1Url: "https://syedamirali.com",
+    qrcode2Url: "https://ramadan-ifter-list-2026-alinapara.netlify.app",
 };
 
 export default data;

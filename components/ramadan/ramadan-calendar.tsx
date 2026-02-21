@@ -42,7 +42,7 @@ export function RamadanCalendar() {
             {/* </div> */}
 
             {/* Footer */}
-            <CalendarFooter footer={data.footer} />
+            <CalendarFooter footer={data.footer} qrcode1Url={data.qrcode1Url} qrcode2Url={data.qrcode2Url} />
         </div>
     );
 }
